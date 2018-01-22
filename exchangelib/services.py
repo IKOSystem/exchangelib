@@ -16,7 +16,7 @@ import abc
 from itertools import chain
 import logging
 import traceback
-from xml.etree.ElementTree import ParseError
+from xml.etree.cElementTree import ParseError
 
 from six import text_type
 

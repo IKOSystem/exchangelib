@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 
 import logging
-from xml.etree.ElementTree import ParseError
+from xml.etree.cElementTree import ParseError
 
 import requests.sessions
 from future.utils import python_2_unicode_compatible

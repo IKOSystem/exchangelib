@@ -7,7 +7,7 @@ CLDR_WINZONE_URL = 'http://unicode.org/repos/cldr/trunk/common/supplemental/wind
 def generate_map():
     """ Helper method to update the map if the CLDR database is updated """
     import requests
-    from xml.etree.ElementTree import fromstring
+    from xml.etree.cElementTree import fromstring
 
     r = requests.get(CLDR_WINZONE_URL)
     assert r.status_code == 200

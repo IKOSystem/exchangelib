@@ -9,7 +9,7 @@ from multiprocessing import Lock
 import re
 import socket
 import time
-from xml.etree.ElementTree import Element, fromstring, ParseError
+from xml.etree.cElementTree import Element, fromstring, ParseError
 
 from lxml.etree import XMLParser, parse, tostring
 from future.moves.urllib.parse import urlparse
@@ -102,7 +102,7 @@ def peek(iterable):
 
 
 def xml_to_str(tree, encoding=None, xml_declaration=False):
-    from xml.etree.ElementTree import ElementTree
+    from xml.etree.cElementTree import ElementTree
     # tostring() returns bytecode unless encoding is 'unicode', and does not reliably produce an XML declaration. We
     # ALWAYS want bytecode so we can convert to unicode explicitly.
     if encoding is None:

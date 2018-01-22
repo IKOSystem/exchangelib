@@ -14,7 +14,7 @@ import string
 import tempfile
 import time
 import unittest
-from xml.etree.ElementTree import ParseError
+from xml.etree.cElementTree import ParseError
 
 from dateutil.relativedelta import relativedelta
 import pytz
